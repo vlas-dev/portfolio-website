@@ -14,15 +14,23 @@ const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-[#ffffff]">
       {/* CONTAINER */}
-      <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-center items-center h-full">
-        <div className="flex justify-center items-center md:order-2 md:flex-col md:justify-start md:items-start max-w-[300px] lg:mr-10 ml-10  mr-10">
+      <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row justify-center items-center h-full">
+
+
+
+        
+
+      <div className=" md:order-3 flex justify-center items-center md:flex-col md:justify-start md:items-start lg:max-w-[400px] max-w-[300px] lg:mr-10 ml-10  mr-10 mt-5">
           <img src={svgHello} alt="SVG Image" className="mb-4 md:mb-0" />
         </div>
-        <div className="md:order-1 flex flex-col justify-center items-center md:items-start max-w-[500px] md:ml-10 lg:ml-10">
-          <h1 className="text-3xl sm:text-3xl  text-[#5f5b5b] max-w-[400px] text-center md:text-left mt-5">
+       
+
+        <div className="flex  flex-col justify-center items-center md:items-start">
+          
+          <h1 className="lg:text-5xl md:text-3xl text-4xl text-[#5f5b5b]  text-center  mt-5">
             Hi, I'm <span className="font-semibold text-[#344359]">Fabián</span>{" "}
           </h1>
-          <h2 className="text-4xl sm:text-4xl font-semibold text-[#444440] max-w-[500px] text-center md:text-left">
+          <h2 className="lg:text-5xl md:text-3xl text-4xl font-semibold text-[#444440]">
             Front-End Developer <br />& Multimedia Editor
           </h2>
           <div
@@ -54,6 +62,11 @@ const Home = () => {
             </Link>
           </div>
         </div>
+
+        
+        
+
+
       </div>
     </div>
   );
