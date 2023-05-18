@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#2f2e46] text-[#ffffff] pt-32 flex flex-col justify-center items-center "
+      className="w-full h-screen bg-[#001a3f] text-[#ffffff] pt-32 flex flex-col justify-center items-center "
     >
       <div className="max-w-[1000px] w-full  px-4 ">
         <div className="max-w-[500px]">
