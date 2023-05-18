@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import { FiArrowDown } from "react-icons/fi";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 import svgHello from "../assets/svgHello.svg";
 
@@ -12,7 +12,7 @@ const Home = () => {
   };
 
   return (
-    <div name="home" className="w-full h-screen bg-[#ffffff]">
+    <div name="/" className="w-full h-screen bg-[#ffffff]">
       {/* CONTAINER */}
       <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row justify-center items-center h-full">
 
@@ -28,7 +28,7 @@ const Home = () => {
         <div className="flex  flex-col justify-center items-center md:items-start">
           
           <h1 className="lg:text-5xl md:text-3xl text-4xl text-[#5f5b5b]  text-center  mt-5">
-            Hi, I'm <span className="font-semibold text-[#344359]">Fabián</span>{" "}
+            Hi, I'm <span className="font-semibold text-[#335384]">Fabián</span>{" "}
           </h1>
           <h2 className="lg:text-5xl md:text-3xl text-4xl font-semibold text-[#444440]">
             Front-End Developer <br />& Multimedia Editor
@@ -38,25 +38,28 @@ const Home = () => {
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
           >
-            <Link to="about" smooth={true} duration={500} >
+            <Link to="/about" >
               <button
-                className={`flex items-center focus:outline-none rounded-lg py-2 px-4 ${
-                  isHovered ? "bg-[#0e1621]" : "bg-gray-300"
+                className={`flex items-center focus:outline-none  py-2 px-4 border-solid border-2 border-[#001a3f]  ${
+                  isHovered ? "bg-[#001a3f]" : ""
                 }`}
               >
                 <span
-                  className={`text-[#444440] mr-2 font-bold ${
-                    isHovered ? "text-white" : ""
+                  className={`text-[#444440] mr-2 font-semibold  ${
+                    isHovered ? "text-white" : " "
                   }`}
                 >
                   Read More
                 </span>
                 <motion.span
-                  initial={{ y: 0 }}
-                  animate={{ y: isHovered ? 5 : 0 }}
+                  initial={{ x: 0 }}
+                  animate={{ x: isHovered ? 5 : 0 }}
                   transition={{ yoyo: Infinity, duration: 0.5 }}
                 >
-                  <FiArrowDown className={isHovered ? "text-white" : ""} />
+                    <FiArrowRight
+    className={isHovered ? "text-white" : ""}
+    style={{ marginTop: "3px" }}
+  />
                 </motion.span>
               </button>
             </Link>

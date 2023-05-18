@@ -6,12 +6,12 @@ import memoryImg from "../assets/memoryImg.jpeg";
 const Projects = () => {
   return (
     <div
-      name="projects"
-      className="w-full md:h-screen text-[#444440] bg-[#ffffff] pt-20"
+      name="/projects"
+      className="w-full bg-[#ffffff] pt-20 sm:pl-4 sm:pr-4  text-center h-screen"
     >
-      <div className="max-w-[1000px] max-h-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full md:pb-32">
+      <div className="w-full max-w-[800px] mx-auto ">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 text-[#444440] border-[#344359]">
+          <p className="text-4xl font-bold inline border-b-4 text-[#444440] border-[#335384]">
             Projects
           </p>
         </div>

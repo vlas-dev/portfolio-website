@@ -13,7 +13,7 @@ import AfterEffects from "../assets/aftereffects.png";
 
 const About = () => {
   return (
-    <div name="about" className="w-full bg-[#001a3f] text-[#ffffff] pt-20 sm:pl-4 sm:pr-4  text-center">
+    <div name="/about" className="w-full bg-[#001a3f] text-[#ffffff] pt-20 sm:pl-4 sm:pr-4  text-center h-screen">
       <div className="w-full max-w-[800px] mx-auto ">
         <div className="pb-5">
           <p className="text-4xl font-bold inline border-b-4 border-[#ffffff]">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 import {
   FaHome,
@@ -10,7 +11,6 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-import { Link } from "react-scroll";
 import { HamburgerArrow } from "react-animated-burgers";
 
 const Navbar = () => {
@@ -24,9 +24,7 @@ const Navbar = () => {
         <li>
           {" "}
           <Link
-            to="home"
-            smooth={true}
-            duration={500}
+            to="/"
             className="py-2 my-3 transition duration-300 ease-in-out relative"
           >
             <span className="nav-link-text  mr-2">
@@ -40,7 +38,7 @@ const Navbar = () => {
         <li>
           {" "}
           <Link
-            to="about"
+            to="/about"
             smooth={true}
             duration={500}
             className="py-2 my-3 transition duration-300 ease-in-out relative"
@@ -53,29 +51,12 @@ const Navbar = () => {
           </Link>
         </li>
 
-       
-        {/* <li>
-          {" "}
-          <Link
-            to="skills"
-            smooth={true}
-            duration={500}
-            className="py-2 my-3 transition duration-300 ease-in-out relative"
-          >
-            <span className="nav-link-text  mr-2">
-              {" "}
-              <FaTools className="inline-block mr-2 pb-1" size={20} />
-              Skills
-            </span>
-          </Link>
-        </li>
- */}
-
+      
 
         <li>
           {" "}
           <Link
-            to="projects"
+            to="/projects"
             smooth={true}
             duration={500}
             className="py-2 my-3 transition duration-300 ease-in-out relative"
@@ -91,7 +72,7 @@ const Navbar = () => {
         <li>
           {" "}
           <Link
-            to="contact"
+            to="/contact"
             smooth={true}
             duration={500}
             className="py-2 my-3 transition duration-300 ease-in-out relative"
@@ -120,21 +101,14 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "md:hidden fixed top-0 left-0 w-full h-screen bg-[#2d2d2b] flex flex-col justify-center px-20 z-40 gap-20"  
+            : "md:hidden fixed top-0 left-0 w-full h-screen bg-[#2d2d2b] flex flex-col justify-center px-20 z-40 gap-20"
         }
       >
-
-
-
-
-
-        
-
         <li>
           {" "}
           <Link
             onClick={handleClick}
-            to="home"
+            to="/"
             smooth={true}
             duration={500}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
@@ -147,19 +121,11 @@ const Navbar = () => {
           </Link>
         </li>
 
-
-
-
-
-
-
-
-
         <li>
           {" "}
           <Link
             onClick={handleClick}
-            to="about"
+            to="/about"
             smooth={true}
             duration={500}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
@@ -171,16 +137,12 @@ const Navbar = () => {
             </span>
           </Link>
         </li>
-        
-        
-      
-
 
         <li>
           {" "}
           <Link
             onClick={handleClick}
-            to="projects"
+            to="/projects"
             smooth={true}
             duration={500}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
@@ -193,12 +155,11 @@ const Navbar = () => {
           </Link>
         </li>
 
-
         <li>
           {" "}
           <Link
             onClick={handleClick}
-            to="contact"
+            to="/contact"
             smooth={true}
             duration={500}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
@@ -210,9 +171,6 @@ const Navbar = () => {
             </span>
           </Link>
         </li>
-
-
-
       </ul>
     </div>
   );
