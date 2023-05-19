@@ -42,13 +42,21 @@ const Projects = () => {
               </p>
 
               <div className="text-center">
-                <a href="https://google.com"  target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#0f0f0f] hover:border-[#0f0f0f] hover:text-[#ffffff] font-bold text-lg">
+                <a
+                  href="https://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://google.com"  target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#0f0f0f] hover:border-[#0f0f0f] hover:text-[#ffffff] font-bold text-lg">
+                <a
+                  href="https://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
                     Code
                   </button>
                 </a>
@@ -76,18 +84,25 @@ const Projects = () => {
                 style={{ textShadow: "0px 0px 2px #000" }}
               >
                 Fetches and displays the weather of a city using the
-                OpenWeatherMap API. Users can enable location-based weather
-                retrieval.
+                OpenWeatherMap API. Supports location-based retrieval.
               </p>
 
               <div className="text-center">
-                <a href="https://google.com"  target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#0f0f0f] hover:border-[#0f0f0f] hover:text-[#ffffff] font-bold text-lg">
+                <a
+                  href="https://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://google.com"  target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#0f0f0f] hover:border-[#0f0f0f] hover:text-[#ffffff] font-bold text-lg">
+                <a
+                  href="https://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
                     Code
                   </button>
                 </a>
@@ -114,30 +129,32 @@ const Projects = () => {
                 className="text-1xl text-white pt-3 pb-3 mr-3 ml-3 font-bold"
                 style={{ textShadow: "0px 0px 2px #000" }}
               >
-                An app to test your memory. Avoid clicking the same image twice
-                to maintain your score. Test your memory and aim for the highest
-                score possible.
+                Test your memory skills by remembering the positions and aim for
+                the highest score possible.
               </p>
 
               <div className="text-center">
-                <a href="https://google.com"  target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#0f0f0f] hover:border-[#0f0f0f] hover:text-[#ffffff] font-bold text-lg">
+                <a
+                  href="https://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center  px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://google.com"  target="_blank" rel="noopener noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#0f0f0f] hover:border-[#0f0f0f] hover:text-[#ffffff] font-bold text-lg">
+                <a
+                  href="https://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="text-center  px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
                     Code
                   </button>
                 </a>
               </div>
-
             </div>
           </div>
-
-
-
-          
         </div>
       </div>
     </div>

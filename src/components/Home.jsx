@@ -40,8 +40,8 @@ const Home = () => {
           >
             <Link to="/about" >
               <button
-                className={`flex items-center focus:outline-none  py-2 px-4 border-solid border-2 border-[#001a3f]  ${
-                  isHovered ? "bg-[#001a3f]" : ""
+                className={`flex items-center focus:outline-none  py-2 px-4 border-solid border-2 border-[#335384]  ${
+                  isHovered ? "bg-[#335384]" : ""
                 }`}
               >
                 <span
