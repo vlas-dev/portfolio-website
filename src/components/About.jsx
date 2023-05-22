@@ -13,14 +13,14 @@ import AfterEffects from "../assets/aftereffects.png";
 
 const About = () => {
   return (
-    <div name="/about" className="w-full bg-[#ffffff] text-[#444440] pt-20 sm:pl-4 sm:pr-4  text-center h-screen">
+    <div name="/about" className="w-full bg-[#ffffff] dark:bg-[#181a1b] text-[#444440] dark:text-gray-300 pt-20 sm:pl-4 sm:pr-4  text-center h-screen">
       <div className="w-full max-w-[800px] mx-auto ">
         <div className="pb-5">
-          <p className="text-4xl font-bold inline border-b-4 border-[#335384]">
+          <p className="text-4xl font-bold inline border-b-4 border-[#3b82f6]">
             About
           </p>
         </div>
-        <div className="max-w-[600px] sm:grid-cols-2 gap-8 mx-auto">
+        <div className="max-w-[600px] sm:grid-cols-2 gap-8 mx-auto pr-4 pl-4">
           <p>
             My work consists of creating user interfaces using HTML, CSS, and
             JavaScript, and also enhancing and editing multimedia content like
@@ -30,7 +30,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-[800px] mx-auto p-4 pt-5 text-center">
+      <div className="w-full max-w-[800px] mx-auto p-4 pt-8 text-center">
   <div>
     <p className="text-2xl font-bold pb-3">Programming Skills</p>
   </div>
@@ -110,7 +110,7 @@ const About = () => {
           src={AfterEffects}
           alt="After Effects icon"
         />
-        <p className="my-4 text-center">After Effects</p>
+        <p className="my-3 text-center">After Effects</p>
       </div>
 
    

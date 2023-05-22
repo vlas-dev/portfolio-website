@@ -7,17 +7,17 @@ const Projects = () => {
   return (
     <div
       name="/projects"
-      className="w-full bg-[#ffffff] pt-20 sm:pl-4 sm:pr-4  text-center h-screen"
+      className="w-full bg-[#ffffff] dark:bg-[#181a1b]  pt-20 sm:pl-4 sm:pr-4  text-center h-screen"
     >
       <div className="w-full max-w-[800px] mx-auto ">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 text-[#444440] border-[#335384]">
+          <p className="text-4xl font-bold inline border-b-4 text-[#444440] dark:text-gray-300 border-[#3b82f6]">
             Projects
           </p>
         </div>
 
         {/* CONTAINER */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-10">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-10 pr-8 pl-8 md:pr-0 md:pl-0">
           {/* GRID ITEM */}
           <div
             style={{ backgroundImage: `url(${calculatorImg})` }}
@@ -47,8 +47,8 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
-                    Demo
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-blue-500  hover:text-[#ffffff] font-bold text-lg">
+                    Live
                   </button>
                 </a>
                 <a
@@ -56,7 +56,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-blue-500  hover:text-[#ffffff] font-bold text-lg">
                     Code
                   </button>
                 </a>
@@ -93,8 +93,8 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
-                    Demo
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-blue-500 hover:text-[#ffffff] font-bold text-lg">
+                    Live
                   </button>
                 </a>
                 <a
@@ -102,7 +102,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
+                  <button className="text-center px-4 py-3 m-2 bg-white text-gray-700 hover:bg-blue-500 hover:text-[#ffffff] font-bold text-lg">
                     Code
                   </button>
                 </a>
@@ -139,8 +139,8 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-center  px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
-                    Demo
+                  <button className="text-center  px-4 py-3 m-2 bg-white text-gray-700 hover:bg-blue-500 hover:text-[#ffffff] font-bold text-lg">
+                    Live
                   </button>
                 </a>
                 <a
@@ -148,7 +148,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-center  px-4 py-3 m-2 bg-white text-gray-700 hover:bg-[#335384] hover:border-[#335384] hover:text-[#ffffff] font-bold text-lg">
+                  <button className="text-center  px-4 py-3 m-2 bg-white text-gray-700 hover:bg-blue-500 hover:text-[#ffffff] font-bold text-lg">
                     Code
                   </button>
                 </a>
