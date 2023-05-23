@@ -1,24 +1,18 @@
 import React from "react";
 import {
-  FaHome,
-  FaUser,
-  FaTools,
-  FaBriefcase,
-  FaPhone,
-  FaBars,
-  FaTimes,
+ 
+ 
   FaGithub,
   FaLinkedin,
-  FaFacebook,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Link } from "react-scroll";
-import { HamburgerArrow } from "react-animated-burgers";
 import { toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+
+import { motion } from "framer-motion";
+
 
 const copyEmail = () => {
   navigator.clipboard.writeText("example@example.com");
@@ -37,18 +31,27 @@ const Contact = () => {
   return (
     <div
       name="/contact"
-      className="w-full bg-[#ffffff] text-[#444440] dark:text-gray-300 dark:bg-[#181a1b]  pt-20 sm:pl-4 sm:pr-4 text-center h-screen"
+      className="w-full bg-[#ffffff] text-[#444440] dark:text-gray-300 dark:bg-[#181a1b]  pt-20 sm:pl-4 sm:pr-4 text-center h-screen  transition-colors duration-200"
+    
+
     >
-      <div className="w-full max-w-[800px] mx-auto">
+      <motion.div className="w-full max-w-[800px] mx-auto"
+        
+        initial={{ opacity: 0, translateX: -3 }}
+        animate={{ opacity: 1, translateX: 0 }}
+        exit={{ opacity: 0, translateX: 3 }}
+        transition={{duration: 0.5 }} 
+        style={{ overflowAnchor: "auto" }}
+        >
         <div className="pb-5">
-          <p className="text-4xl font-bold inline border-b-4 border-[#3b82f6]">
+          <p className="text-4xl font-bold inline border-b-4 border-blue-500">
             Contact
           </p>
 
           {/* SOCIAL ICONS */}
           <div className="flex justify-center pt-8 gap-5 text-[#444440] dark:text-gray-300">
             <a
-              className="transition-all duration-100 ease-in-out transform  hover:text-[#3b82f6]"
+              className="transition-all duration-100 ease-in-out transform  hover:text-blue-500"
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +59,7 @@ const Contact = () => {
               <FaLinkedin size={40} />
             </a>
             <a
-              className="transition-all duration-100 ease-in-out transform hover:text-[#3b82f6]"
+              className="transition-all duration-100 ease-in-out transform hover:text-blue-500"
               href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +67,7 @@ const Contact = () => {
               <FaGithub size={40} />
             </a>
             <a
-              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-[#3b82f6]"
+              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-blue-500"
               onClick={copyEmail}
             >
               <HiOutlineMail size={40} />
@@ -103,11 +106,11 @@ const Contact = () => {
             style={{ outline: "none" }}
             required
           ></textarea>
-          <button className="text-[#0e1621]  bg-[#ffffff] border-solid border-2 border-[#3b82f6] hover:bg-[#3b82f6] hover:border-[#3b82f6] hover:text-[#ffffff] px-4 py-3 my-5 mx-auto flex items-center">
+          <button className="text-white  bg-blue-500 hover:bg-white border-solid border-2 hover:border-blue-500 border-blue-500 dark:hover:border-white  hover:text-gray-800 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
             Send
           </button>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

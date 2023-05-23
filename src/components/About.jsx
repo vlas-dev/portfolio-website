@@ -10,10 +10,24 @@ import Illustrator from "../assets/illustrator.png";
 import Premiere from "../assets/premiere.png";
 import AfterEffects from "../assets/aftereffects.png";
 
+import { motion } from "framer-motion";
+
 
 const About = () => {
   return (
-    <div name="/about" className="w-full bg-[#ffffff] dark:bg-[#181a1b] text-[#444440] dark:text-gray-300 pt-20 sm:pl-4 sm:pr-4  text-center h-screen">
+    <div name="/about" className="w-full bg-[#ffffff] dark:bg-[#181a1b] text-[#444440] dark:text-gray-300 pt-20 sm:pl-4 sm:pr-4  text-center h-screen  transition-colors duration-200"
+      
+    
+
+    >
+      <motion.div
+       initial={{ opacity: 0, translateX: -3 }}
+       animate={{ opacity: 1, translateX: 0 }}
+       exit={{ opacity: 0, translateX: 3 }}
+      transition={{duration: 0.5 }} 
+      style={{ overflowAnchor: "auto" }}
+      
+      >
       <div className="w-full max-w-[800px] mx-auto ">
         <div className="pb-5">
           <p className="text-4xl font-bold inline border-b-4 border-[#3b82f6]">
@@ -120,7 +134,7 @@ const About = () => {
 </div>
 
 
-
+</motion.div>
 
 </div>
   );

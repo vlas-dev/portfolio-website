@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaHome, FaUser, FaBriefcase, FaPhone } from "react-icons/fa";
 import { IoIosSunny, IoIosMoon } from "react-icons/io";
 import { Squash as Hamburger } from 'hamburger-react';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logoF.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
+    setDarkMode(newDarkMode); 
     localStorage.setItem("darkMode", newDarkMode.toString());
   };
 
@@ -23,7 +23,7 @@ const Navbar = () => {
   }, [darkMode]);
 
   return (
-    <div className="fixed w-full h-[65px] bg-white dark:bg-[#181a1b] nav-index border-b-2 border-gray-200 dark:border-[#222425]">
+    <div className="fixed w-full h-[65px] bg-white dark:bg-[#181a1b] nav-index border-b-2 border-gray-200 dark:border-[#222425] transition-colors duration-200">
       <div className="max-w-[800px] mx-auto flex justify-between items-center">
         <div className="ml-4 mt-2 mb-2 md:ml-2 md:mt-3">
           <Link to="/">
@@ -59,23 +59,23 @@ const Navbar = () => {
         </ul>
 
         <button
-          className="ml-auto p-2 focus:outline-none  mt-2 md:mt-0" 
+          className="ml-auto p-2 focus:outline-none  mt-2 md:mt-0 " 
           onClick={toggleDarkMode}
         >
           {darkMode ? (
             <div className="flex items-center justify-center">
-              <IoIosSunny className="md:h-6 md:w-6 h-8 w-8 text-gray-300 hover:text-blue-500" />
+              <IoIosSunny className="md:h-6 md:w-6 h-8 w-8 text-gray-300 hover:text-blue-500  transition-colors duration-200" />
             </div>
           ) : (
             <div className="flex items-center justify-center">
-              <IoIosMoon className="md:h-6 md:w-6 h-8 w-8 text-gray-500  hover:text-blue-500" />
+              <IoIosMoon className="md:h-6 md:w-6 h-8 w-8 text-gray-500  hover:text-blue-500 transition-colors duration-200" />
             </div>
           )}
         </button>
 
         <div onClick={handleClick} className="md:hidden z-50 mt-2 mr-4">
           <Hamburger
-            color={darkMode ? "rgb(209 213 219)" : "#444440"}
+            color={darkMode ? "rgb(209 213 219)" : "rgb(107 114 128)"}
             size={30}
           />
         </div>
