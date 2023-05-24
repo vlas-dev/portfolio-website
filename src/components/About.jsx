@@ -22,7 +22,7 @@ const About = () => {
         initial={{ opacity: 0, translateX: -3 }}
         animate={{ opacity: 1, translateX: 0 }}
         exit={{ opacity: 0, translateX: 3 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
         style={{ overflowAnchor: "auto" }}
       >
         <div className="w-full max-w-[800px] text-center pt-20">
