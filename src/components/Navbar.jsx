@@ -1,20 +1,28 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 import { FaHome, FaUser, FaBriefcase, FaPhone } from "react-icons/fa";
 import { IoIosSunny, IoIosMoon } from "react-icons/io";
-import { Squash as Hamburger } from 'hamburger-react';
-import Logo from '../assets/logoF.png';
+import { Squash as Hamburger } from "hamburger-react";
+import Logo from "../assets/logoF.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
+  const [menuIcon, setMenuIcon] = useState("hamburger");
+  const location = useLocation();
+  const [activeSection, setActiveSection] = useState("");
 
-  const handleClick = () => setNav(!nav);
+  const handleClick = (section) => {
+    setNav(false);
+    setMenuIcon("hamburger");
+    setActiveSection(section);
+  };
+
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode); 
+    setDarkMode(newDarkMode);
     localStorage.setItem("darkMode", newDarkMode.toString());
   };
 
@@ -22,44 +30,83 @@ const Navbar = () => {
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
+  useEffect(() => {
+    const path = location.pathname; // Get the current URL path
+
+    // Map the section URLs to their corresponding IDs
+    const sectionURLs = {
+      "/": "home",
+      "/about": "about",
+      "/projects": "projects",
+      "/contact": "contact",
+    };
+
+    setActiveSection(sectionURLs[path]); // Set the active section based on the current URL
+  }, [location]);
+
   return (
-    <div className="fixed w-full h-[65px] bg-white dark:bg-[#181a1b] nav-index border-b-2 border-gray-200 dark:border-[#222425] transition-colors duration-200">
+    <div className="fixed w-full h-[65px] bg-white dark:bg-[#181a1b] nav-index border-b-2 border-gray-200 dark:border-[#222425] transition-colors duration-200 ">
       <div className="max-w-[800px] mx-auto flex justify-between items-center">
         <div className="ml-4 mt-2 mb-2 md:ml-2 md:mt-3">
-          <Link to="/">
-            <img src={Logo} alt="" style={{ width: '40px' }} />
+          <Link to="/" onClick={() => handleClick("home")}>
+            <img src={Logo} alt="" style={{ width: "40px" }} />
           </Link>
         </div>
-
         <ul className="hidden md:flex flex-grow justify-center text-gray-600 dark:text-gray-300 text-lg">
+          
+          
+        <li>
+            <Link to="/" onClick={() => handleClick("home")}>
+              <span
+                className={`transition-colors duration-200 ${
+                  activeSection === "home" ? "text-blue-500" : ""
+                }`}
+              >
+                <FaHome className="inline-block pb-1 mr-2" size={20} />
+                Home
+              </span>
+            </Link>
+          </li>
+          
           <li>
-            <Link to="/about" smooth={true} duration={500} className="py-2 my-3 transition duration-300 ease-in-out relative">
-              <span className="nav-link-text">
+            <Link to="/about" onClick={() => handleClick("about")}>
+              <span
+                className={`transition-colors duration-200 ${
+                  activeSection === "about" ? "text-blue-500" : ""
+                }`}
+              >
                 <FaUser className="inline-block pb-1 mr-2" size={20} />
                 About
               </span>
             </Link>
           </li>
           <li>
-            <Link to="/projects" smooth={true} duration={500} className="py-2 my-3 transition duration-300 ease-in-out relative">
-              <span className="nav-link-text">
+            <Link to="/projects" onClick={() => handleClick("projects")}>
+              <span
+                className={`transition-colors duration-200 ${
+                  activeSection === "projects" ? "text-blue-500" : ""
+                }`}
+              >
                 <FaBriefcase className="inline-block pb-1 mr-2" size={20} />
                 Projects
               </span>
             </Link>
           </li>
           <li>
-            <Link to="/contact" smooth={true} duration={500} className="py-2 my-3 transition duration-300 ease-in-out relative">
-              <span className="nav-link-text">
+            <Link to="/contact" onClick={() => handleClick("contact")}>
+              <span
+                className={`transition-colors duration-200 ${
+                  activeSection === "contact" ? "text-blue-500" : ""
+                }`}
+              >
                 <FaPhone className="inline-block pb-1 mr-2" size={20} />
                 Contact
               </span>
             </Link>
           </li>
         </ul>
-
         <button
-          className="ml-auto p-2 focus:outline-none  mt-2 md:mt-0 " 
+          className="ml-auto p-2 focus:outline-none  mt-2 md:mt-0 "
           onClick={toggleDarkMode}
         >
           {darkMode ? (
@@ -72,53 +119,92 @@ const Navbar = () => {
             </div>
           )}
         </button>
-
-        <div onClick={handleClick} className="md:hidden z-50 mt-2 mr-4">
+        <div onClick={() => setNav(!nav)} className="hamburger-index md:hidden mt-2 mr-4">
           <Hamburger
             color={darkMode ? "rgb(209 213 219)" : "rgb(107 114 128)"}
             size={30}
+            toggled={nav}
+            toggle={setNav}
+            onToggle={(toggled) => setMenuIcon(toggled ? "times" : "hamburger")}
           />
         </div>
       </div>
-
-      {/* MOBILE MENU */}
-      <ul className={`md:hidden fixed top-0 right-0 h-screen bg-white dark:bg-[#181a1b] flex flex-col justify-center z-40 gap-8 text-gray-600 dark:text-gray-300 transform ${nav ? 'translate-x-0' : 'translate-x-full'} transition duration-300 ease-in-out`} onClick={handleClick}>
+      <div
+        className={`fixed top-0 right-0 h-screen w-full bg-black bg-opacity-50 z-40 transition-opacity ${
+          nav ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setNav(false)}
+      ></div>
+      <ul
+        className={`md:hidden fixed top-0 right-0 h-screen  bg-white dark:bg-[#181a1b] flex flex-col justify-center z-50 gap-8 text-gray-600 dark:text-gray-300 transform  ${
+          nav ? "translate-x-0" : "translate-x-full"
+        } transition duration-300 ease-in-out`}
+      >
         <li>
-          <Link to="/" smooth={true} duration={500} className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative">
-            <span className="nav-link-text mr-2">
+          <Link
+            to="/"
+            onClick={() => handleClick("home")}
+            className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+          >
+            <span
+              className={`transition-colors duration-200 ${
+                activeSection === "home" ? "text-blue-500" : ""
+              }`}
+            >
               <FaHome className="inline-block mr-2 pb-1" size={30} />
               Home
             </span>
           </Link>
         </li>
         <li>
-          <Link to="/about" smooth={true} duration={500} className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative">
-            <span className="nav-link-text">
+          <Link
+            to="/about"
+            onClick={() => handleClick("about")}
+            className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+          >
+            <span
+              className={`transition-colors duration-200 ${
+                activeSection === "about" ? "text-blue-500" : ""
+              }`}
+            >
               <FaUser className="inline-block mr-2 pb-1" size={30} />
               About
             </span>
           </Link>
         </li>
         <li>
-          <Link to="/projects" smooth={true} duration={500} className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative">
-            <span className="nav-link-text">
+          <Link
+            to="/projects"
+            onClick={() => handleClick("projects")}
+            className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+          >
+            <span
+              className={`transition-colors duration-200 ${
+                activeSection === "projects" ? "text-blue-500" : ""
+              }`}
+            >
               <FaBriefcase className="inline-block mr-2 pb-1" size={30} />
               Projects
             </span>
           </Link>
         </li>
         <li>
-          <Link to="/contact" smooth={true} duration={500} className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative">
-            <span className="nav-link-text">
+          <Link
+            to="/contact"
+            onClick={() => handleClick("contact")}
+            className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+          >
+            <span
+              className={`transition-colors duration-200 ${
+                activeSection === "contact" ? "text-blue-500" : ""
+              }`}
+            >
               <FaPhone className="inline-block mr-2 pb-1" size={30} />
               Contact
             </span>
           </Link>
         </li>
       </ul>
-
-      {/* Background overlay */}
-      {nav && <div className="fixed inset-0 bg-black opacity-50 z-30" onClick={handleClick}></div>}
     </div>
   );
 };

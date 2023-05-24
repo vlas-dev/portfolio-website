@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div
       name="/contact"
-      className="w-full bg-[#ffffff] text-[#444440] dark:text-gray-300 dark:bg-[#181a1b]  pt-20 sm:pl-4 sm:pr-4 text-center h-screen  transition-colors duration-200"
+      className="flex justify-center items-center pt-20 md:pt-0 md:h-screen w-full bg-white text-[#444440] dark:text-gray-300 dark:bg-[#181a1b] sm:pl-4 sm:pr-4 text-center  transition-colors duration-200"
     
 
     >
@@ -44,7 +44,7 @@ const Contact = () => {
         style={{ overflowAnchor: "auto" }}
         >
         <div className="pb-5">
-          <p className="text-4xl font-bold inline border-b-4 border-blue-500">
+          <p className="text-4xl font-bold inline ">
             Contact
           </p>
 
@@ -79,11 +79,11 @@ const Contact = () => {
         <form
           method="POST"
           action="https://getform.io/f/ff243ebd-e5c5-4af6-a8a3-27482096be97"
-          className="flex flex-col items-center mx-auto pl-8 pr-8"
+          className="flex flex-col items-center mx-auto pl-8 pr-8 h-screen md:h-full "
           style={{ maxWidth: "600px" }}
         >
           <input
-            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] hover:text-[#0e1621] w-full border-solid border-2 "
+            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] hover:text-[#0e1621] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] "
             type="text"
             placeholder="Name"
             name="name"
@@ -91,7 +91,7 @@ const Contact = () => {
             required
           />
           <input
-            className="my-4 p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 "
+            className="my-4 p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] "
             type="text"
             placeholder="Email"
             name="email"
@@ -99,7 +99,7 @@ const Contact = () => {
             required
           />
           <textarea
-            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 "
+            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] "
             name="message"
             rows="7"
             placeholder="Message"
