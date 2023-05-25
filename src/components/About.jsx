@@ -25,23 +25,20 @@ const About = () => {
         transition={{ duration: 0.3 }}
         style={{ overflowAnchor: "auto" }}
       >
-        <div className="w-full max-w-[800px] text-center pt-20">
+        <div className="w-full max-w-[500px] md:max-w-[800px] text-center pt-20">
           <div className="pb-5">
             <p className="text-4xl font-bold inline">About</p>
           </div>
-          <div className="sm:grid-cols-2 gap-8 pr-4 pl-4 md:pr-32 md:pl-32 mb-5">
+          <div className="sm:grid-cols-2 gap-8 pr-8 pl-8 md:pr-32 md:pl-32 mb-5">
             <p>
-              My work consists of creating user interfaces using HTML, CSS, and
-              JavaScript, and also enhancing and editing multimedia content like
-              videos, images, and audio. With this combined skill set, I try to
-              bring engaging digital experiences to life.
+            My work consists of creating web apps using HTML, CSS, and JavaScript, as well as editing multimedia content. With this combined skill set, I try to bring engaging user experiences to life.
             </p>
           </div>
         </div>
 
         <div className="w-full p-4 pt-8 mb-10 text-center">
           <div>
-            <p className="text-2xl font-bold mb-8">Programming Skills</p>
+            <p className="text-2xl font-bold mb-8">Main Skills</p>
           </div>
 
 
@@ -96,7 +93,7 @@ const About = () => {
 
         <div className="w-full p-4 pt-0 text-center">
           <div>
-            <p className="text-2xl font-bold mb-8">Editing Skills</p>
+            <p className="text-2xl font-bold mb-8">Additional Skills</p>
           </div>
 
           <div className="justify-center gap-4 font-bold flex flex-no-wrap max-w-[350px] md:max-w-[500px] mx-auto">  

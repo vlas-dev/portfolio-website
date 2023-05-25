@@ -13,11 +13,18 @@ const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState("hamburger");
   const location = useLocation();
   const [activeSection, setActiveSection] = useState("");
+  const [isClickable, setIsClickable] = useState(true);
 
   const handleClick = (section) => {
-    setNav(false);
-    setMenuIcon("hamburger");
-    setActiveSection(section);
+    if (isClickable) {
+      setNav(false);
+      setMenuIcon("hamburger");
+      setActiveSection(section);
+      setIsClickable(false);
+      setTimeout(() => {
+        setIsClickable(true);
+      }, 300);
+    }
   };
 
   const toggleDarkMode = () => {
@@ -53,10 +60,12 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className="hidden md:flex flex-grow justify-center text-gray-600 dark:text-gray-300 text-lg">
-          
-          
-        <li>
-            <Link to="/" onClick={() => handleClick("home")}>
+          <li>
+            <Link
+              to="/"
+              onClick={() => handleClick("home")}
+              style={{ pointerEvents: isClickable ? "auto" : "none" }}
+            >
               <span
                 className={`transition-colors duration-200 ${
                   activeSection === "home" ? "text-blue-500" : ""
@@ -67,9 +76,12 @@ const Navbar = () => {
               </span>
             </Link>
           </li>
-          
           <li>
-            <Link to="/about" onClick={() => handleClick("about")}>
+            <Link
+              to="/about"
+              onClick={() => handleClick("about")}
+              style={{ pointerEvents: isClickable ? "auto" : "none" }}
+            >
               <span
                 className={`transition-colors duration-200 ${
                   activeSection === "about" ? "text-blue-500" : ""
@@ -81,7 +93,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/projects" onClick={() => handleClick("projects")}>
+            <Link
+              to="/projects"
+              onClick={() => handleClick("projects")}
+              style={{ pointerEvents: isClickable ? "auto" : "none" }}
+            >
               <span
                 className={`transition-colors duration-200 ${
                   activeSection === "projects" ? "text-blue-500" : ""
@@ -93,7 +109,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/contact" onClick={() => handleClick("contact")}>
+            <Link
+              to="/contact"
+              onClick={() => handleClick("contact")}
+              style={{ pointerEvents: isClickable ? "auto" : "none" }}
+            >
               <span
                 className={`transition-colors duration-200 ${
                   activeSection === "contact" ? "text-blue-500" : ""
@@ -119,7 +139,10 @@ const Navbar = () => {
             </div>
           )}
         </button>
-        <div onClick={() => setNav(!nav)} className="hamburger-index md:hidden mt-2 mr-4">
+        <div
+          onClick={() => setNav(!nav)}
+          className="hamburger-index md:hidden mt-2 mr-4"
+        >
           <Hamburger
             color={darkMode ? "rgb(209 213 219)" : "rgb(107 114 128)"}
             size={30}
@@ -145,6 +168,7 @@ const Navbar = () => {
             to="/"
             onClick={() => handleClick("home")}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+            style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
               className={`transition-colors duration-200 ${
@@ -161,6 +185,7 @@ const Navbar = () => {
             to="/about"
             onClick={() => handleClick("about")}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+            style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
               className={`transition-colors duration-200 ${
@@ -177,6 +202,7 @@ const Navbar = () => {
             to="/projects"
             onClick={() => handleClick("projects")}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+            style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
               className={`transition-colors duration-200 ${
@@ -193,6 +219,7 @@ const Navbar = () => {
             to="/contact"
             onClick={() => handleClick("contact")}
             className="ml-16 mr-20 text-4xl transition duration-300 ease-in-out relative"
+            style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
               className={`transition-colors duration-200 ${

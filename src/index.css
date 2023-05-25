@@ -15,6 +15,9 @@
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 
 .nav-index {
   z-index: 1000;
@@ -23,4 +26,5 @@
 .hamburger-index{
   z-index: 1000;
 }
+
 

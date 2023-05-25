@@ -32,8 +32,10 @@ const Home = () => {
             Hi, I'm <span className="font-semibold text-blue-500 ">Fabián</span>{" "}
           </h1>
           <h2 className="md:text-5xl text-4xl font-semibold text-gray-600 dark:text-gray-400  pb-5">
-            Front-End Developer <br />& Multimedia Editor
+            Front-End Developer
           </h2>
+          <p className=" text-gray-600 dark:text-gray-400 text-center max-w-[600px] pr-8 pl-8 md:pr-0 md:pl-0">
+          I'm a front-end developer from Argentina specialized in React. Additionally, I have some multimedia editing skills.          </p>
           <div
             className="relative mt-5"
             onMouseEnter={handleHover}
