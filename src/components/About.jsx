@@ -31,7 +31,7 @@ const About = () => {
           </div>
           <div className="sm:grid-cols-2 gap-8 pr-8 pl-8 md:pr-32 md:pl-32 mb-5">
             <p>
-            My work consists of creating web apps using HTML, CSS, and JavaScript, as well as editing multimedia content. With this combined skill set, I try to bring engaging user experiences to life.
+            My work consists of creating web apps as well as editing multimedia content. With this combined skill set, I try to bring engaging user experiences to life.
             </p>
           </div>
         </div>

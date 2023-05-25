@@ -66,12 +66,13 @@ const Contact = () => {
             >
               <FaGithub size={40} />
             </a>
-            <a
+            <button
+              type="button"
               className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-blue-500"
               onClick={copyEmail}
             >
               <HiOutlineMail size={40} />
-            </a>
+            </button>
           </div>
           <ToastContainer />
         </div>
