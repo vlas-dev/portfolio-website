@@ -36,7 +36,7 @@ const Projects = () => {
                 Calculator
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                A simple calculator built using JavaScript. It can perform basic
+                A simple calculator built using React and JavaScript. It can perform basic
                 mathematical operations.
               </p>
             </div>
