@@ -51,7 +51,7 @@ const Contact = () => {
           {/* SOCIAL ICONS */}
           <div className="flex justify-center pt-8 gap-5 text-[#444440] dark:text-gray-300">
             <a
-              className="transition-all duration-100 ease-in-out transform  hover:text-[#74acdf]"
+              className="transition-all duration-100 ease-in-out transform  hover:text-[#7fa7fa]"
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const Contact = () => {
               <FaLinkedin size={40} />
             </a>
             <a
-              className="transition-all duration-100 ease-in-out transform hover:text-[#74acdf]"
+              className="transition-all duration-100 ease-in-out transform hover:text-[#7fa7fa]"
               href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Contact = () => {
             </a>
             <button
               type="button"
-              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-[#74acdf]"
+              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-[#7fa7fa]"
               onClick={copyEmail}
             >
               <HiOutlineMail size={40} />
@@ -107,7 +107,7 @@ const Contact = () => {
             style={{ outline: "none" }}
             required
           ></textarea>
-          <button className="text-white  bg-[#74acdf] hover:bg-white border-solid border-2 hover:border-[#74acdf] border-[#74acdf] dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
+          <button className="text-white  bg-[#7fa7fa] hover:bg-white border-solid border-2 hover:border-[#7fa7fa] border-[#7fa7fa] dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
             Send
           </button>
         </form>

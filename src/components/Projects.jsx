@@ -46,7 +46,7 @@ const Projects = () => {
                 href="https://vlas-dev.github.io/calculator-app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-2 m-2  text-white border-2 border-[#74acdf] hover:dark:border-white bg-[#74acdf] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
+                className="text-center px-4 py-2 m-2  text-white border-2 border-[#7fa7fa] hover:dark:border-white bg-[#7fa7fa] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
               >
                 Live
               </a>
@@ -54,7 +54,7 @@ const Projects = () => {
                 href="https://github.com/vlas-dev/calculator-app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-2 m-2  text-white border-2 border-[#74acdf] hover:dark:border-white bg-[#74acdf] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
+                className="text-center px-4 py-2 m-2  text-white border-2 border-[#7fa7fa] hover:dark:border-white bg-[#7fa7fa] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
               >
                 Code
               </a>
@@ -77,7 +77,7 @@ const Projects = () => {
                 href="https://google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-2 m-2  text-white border-2 border-[#74acdf] hover:dark:border-white bg-[#74acdf] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
+                className="text-center px-4 py-2 m-2  text-white border-2 border-[#7fa7fa] hover:dark:border-white bg-[#7fa7fa] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
               >
                 Live
               </a>
@@ -85,7 +85,7 @@ const Projects = () => {
                 href="https://google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-2 m-2  text-white border-2 border-[#74acdf] hover:dark:border-white bg-[#74acdf] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
+                className="text-center px-4 py-2 m-2  text-white border-2 border-[#7fa7fa] hover:dark:border-white bg-[#7fa7fa] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
               >
                 Code
               </a>
@@ -108,7 +108,7 @@ const Projects = () => {
                 href="https://google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-2 m-2  text-white border-2 border-[#74acdf] hover:dark:border-white bg-[#74acdf] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
+                className="text-center px-4 py-2 m-2  text-white border-2 border-[#7fa7fa] hover:dark:border-white bg-[#7fa7fa] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
               >
                 Live
               </a>
@@ -116,7 +116,7 @@ const Projects = () => {
                 href="https://google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-2 m-2  text-white border-2 border-[#74acdf] hover:dark:border-white bg-[#74acdf] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
+                className="text-center px-4 py-2 m-2  text-white border-2 border-[#7fa7fa] hover:dark:border-white bg-[#7fa7fa] hover:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
               >
                 Code
               </a>
