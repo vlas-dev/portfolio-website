@@ -43,7 +43,7 @@ const Projects = () => {
  
             <div className="text-center pt-4 pb-4 mb-4">
               <a
-                href="https://vlas-dev.github.io/calculator-app/"
+                href="https://vlas-dev.github.io/calculator-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center px-4 py-2 m-2  text-white border-2 border-blue-500 hover:dark:border-white bg-blue-500 hover:bg-white hover:text-gray-700 font-bold text-lg transition-colors duration-200"
