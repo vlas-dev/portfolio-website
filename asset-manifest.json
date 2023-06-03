@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-website-v1/static/css/main.244d0313.css",
-    "main.js": "/portfolio-website-v1/static/js/main.7c3a22b9.js",
-    "static/media/weatherImg.jpeg": "/portfolio-website-v1/static/media/weatherImg.6fa69d2751189182f306.jpeg",
-    "static/media/calculatorImg.jpeg": "/portfolio-website-v1/static/media/calculatorImg.70b4fb57d8ea9fb26307.jpeg",
-    "static/media/memoryImg.jpeg": "/portfolio-website-v1/static/media/memoryImg.a891e03c15949bc22cfd.jpeg",
-    "static/media/react.png": "/portfolio-website-v1/static/media/react.2c5b4136e53e9d195318.png",
-    "static/media/css.png": "/portfolio-website-v1/static/media/css.c85c779719afa1690757.png",
-    "static/media/html.png": "/portfolio-website-v1/static/media/html.c804c54f6db6fb81e5b8.png",
-    "static/media/node.png": "/portfolio-website-v1/static/media/node.3a3a25297ff37c921817.png",
-    "static/media/tailwind.png": "/portfolio-website-v1/static/media/tailwind.0b491bc22859f311584f.png",
-    "static/media/javascript.png": "/portfolio-website-v1/static/media/javascript.0dee5a8fec8703bdc1af.png",
-    "index.html": "/portfolio-website-v1/index.html",
-    "main.244d0313.css.map": "/portfolio-website-v1/static/css/main.244d0313.css.map",
-    "main.7c3a22b9.js.map": "/portfolio-website-v1/static/js/main.7c3a22b9.js.map"
+    "main.css": "/static/css/main.244d0313.css",
+    "main.js": "/static/js/main.e025d65e.js",
+    "static/media/weatherImg.jpeg": "/static/media/weatherImg.6fa69d2751189182f306.jpeg",
+    "static/media/calculatorImg.jpeg": "/static/media/calculatorImg.70b4fb57d8ea9fb26307.jpeg",
+    "static/media/memoryImg.jpeg": "/static/media/memoryImg.a891e03c15949bc22cfd.jpeg",
+    "static/media/react.png": "/static/media/react.2c5b4136e53e9d195318.png",
+    "static/media/css.png": "/static/media/css.c85c779719afa1690757.png",
+    "static/media/html.png": "/static/media/html.c804c54f6db6fb81e5b8.png",
+    "static/media/node.png": "/static/media/node.3a3a25297ff37c921817.png",
+    "static/media/tailwind.png": "/static/media/tailwind.0b491bc22859f311584f.png",
+    "static/media/javascript.png": "/static/media/javascript.0dee5a8fec8703bdc1af.png",
+    "index.html": "/index.html",
+    "main.244d0313.css.map": "/static/css/main.244d0313.css.map",
+    "main.e025d65e.js.map": "/static/js/main.e025d65e.js.map"
   },
   "entrypoints": [
     "static/css/main.244d0313.css",
-    "static/js/main.7c3a22b9.js"
+    "static/js/main.e025d65e.js"
   ]
 }
