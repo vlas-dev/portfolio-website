@@ -29,7 +29,7 @@ const Home = () => {
     >
         <div className="flex flex-col justify-center items-center ">
           <h1 className="md:text-6xl text-5xl text-gray-500 dark:text-gray-300 text-center mt-5 pb-5">
-            Hi, I'm <span className="font-semibold text-blue-500 ">Fabián</span>{" "}
+            Hi, I'm <span className="font-semibold text-[#74acdf] ">Fabián</span>{" "}
           </h1>
           <h2 className="md:text-5xl text-4xl font-semibold text-gray-600 dark:text-gray-400  pb-5">
             Front-End Developer
@@ -43,13 +43,13 @@ const Home = () => {
           >
             <Link to="/about">
               <button
-                className={`flex items-center focus:outline-none py-2 px-4 border-solid border-2 border-blue-500  bg-blue-500 transition-colors duration-200 ${
-                  isHovered ? "bg-white dark:border-white " : ""
+                className={`flex items-center focus:outline-none py-2 px-4 border-solid border-2 border-[#74acdf] transition-colors duration-200 ${
+                  isHovered ? "bg-white dark:border-white " : "bg-[#74acdf]"
                 }`}
               >
                 <span
                   className={`mr-2 ${
-                    isHovered ? "text-gray-800 " : "text-white "
+                    isHovered ? "text-gray-600 " : "text-white "
                   }`}
                 >
                   Read More
@@ -62,7 +62,7 @@ const Home = () => {
                   <FiArrowRight
                     className={
                       isHovered
-                        ? "text-gray-800"
+                        ? "text-gray-600"
                         : "text-white"
                     }
                     style={{ marginTop: "3px" }}

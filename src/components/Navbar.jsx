@@ -68,7 +68,7 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "home" ? "text-blue-500" : ""
+                  activeSection === "home" ? "text-[#74acdf]" : ""
                 }`}
               >
                 <FaHome className="inline-block pb-1 mr-2" size={20} />
@@ -84,7 +84,7 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "about" ? "text-blue-500" : ""
+                  activeSection === "about" ? "text-[#74acdf]" : ""
                 }`}
               >
                 <FaUser className="inline-block pb-1 mr-2" size={20} />
@@ -100,7 +100,7 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "projects" ? "text-blue-500" : ""
+                  activeSection === "projects" ? "text-[#74acdf]" : ""
                 }`}
               >
                 <FaBriefcase className="inline-block pb-1 mr-2" size={20} />
@@ -116,7 +116,7 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "contact" ? "text-blue-500" : ""
+                  activeSection === "contact" ? "text-[#74acdf]" : ""
                 }`}
               >
                 <FaPhone className="inline-block pb-1 mr-2" size={20} />
@@ -131,11 +131,11 @@ const Navbar = () => {
         >
           {darkMode ? (
             <div className="flex items-center justify-center">
-              <IoIosSunny className="md:h-6 md:w-6 h-8 w-8 text-gray-300 hover:text-blue-500  transition-colors duration-200" />
+              <IoIosSunny className="md:h-6 md:w-6 h-8 w-8 text-gray-300 hover:text-[#74acdf]  transition-colors duration-200" />
             </div>
           ) : (
             <div className="flex items-center justify-center">
-              <IoIosMoon className="md:h-6 md:w-6 h-8 w-8 text-gray-500  hover:text-blue-500 transition-colors duration-200" />
+              <IoIosMoon className="md:h-6 md:w-6 h-8 w-8 text-gray-500  hover:text-[#74acdf] transition-colors duration-200" />
             </div>
           )}
         </button>
@@ -172,7 +172,7 @@ const Navbar = () => {
           >
             <span
               className={`transition-colors duration-200 ${
-                activeSection === "home" ? "text-blue-500" : ""
+                activeSection === "home" ? "text-[#74acdf]" : ""
               }`}
             >
               <FaHome className="inline-block mr-2 pb-1" size={30} />
@@ -189,7 +189,7 @@ const Navbar = () => {
           >
             <span
               className={`transition-colors duration-200 ${
-                activeSection === "about" ? "text-blue-500" : ""
+                activeSection === "about" ? "text-[#74acdf]" : ""
               }`}
             >
               <FaUser className="inline-block mr-2 pb-1" size={30} />
@@ -206,7 +206,7 @@ const Navbar = () => {
           >
             <span
               className={`transition-colors duration-200 ${
-                activeSection === "projects" ? "text-blue-500" : ""
+                activeSection === "projects" ? "text-[#74acdf]" : ""
               }`}
             >
               <FaBriefcase className="inline-block mr-2 pb-1" size={30} />
@@ -223,7 +223,7 @@ const Navbar = () => {
           >
             <span
               className={`transition-colors duration-200 ${
-                activeSection === "contact" ? "text-blue-500" : ""
+                activeSection === "contact" ? "text-[#74acdf]" : ""
               }`}
             >
               <FaPhone className="inline-block mr-2 pb-1" size={30} />

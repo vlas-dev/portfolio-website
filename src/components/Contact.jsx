@@ -51,7 +51,7 @@ const Contact = () => {
           {/* SOCIAL ICONS */}
           <div className="flex justify-center pt-8 gap-5 text-[#444440] dark:text-gray-300">
             <a
-              className="transition-all duration-100 ease-in-out transform  hover:text-blue-500"
+              className="transition-all duration-100 ease-in-out transform  hover:text-[#74acdf]"
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const Contact = () => {
               <FaLinkedin size={40} />
             </a>
             <a
-              className="transition-all duration-100 ease-in-out transform hover:text-blue-500"
+              className="transition-all duration-100 ease-in-out transform hover:text-[#74acdf]"
               href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Contact = () => {
             </a>
             <button
               type="button"
-              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-blue-500"
+              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-[#74acdf]"
               onClick={copyEmail}
             >
               <HiOutlineMail size={40} />
@@ -107,7 +107,7 @@ const Contact = () => {
             style={{ outline: "none" }}
             required
           ></textarea>
-          <button className="text-white  bg-blue-500 hover:bg-white border-solid border-2 hover:border-blue-500 border-blue-500 dark:hover:border-white  hover:text-gray-800 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
+          <button className="text-white  bg-[#74acdf] hover:bg-white border-solid border-2 hover:border-[#74acdf] border-[#74acdf] dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
             Send
           </button>
         </form>
