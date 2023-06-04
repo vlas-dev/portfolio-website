@@ -29,7 +29,7 @@ const Home = () => {
     >
         <div className="flex flex-col justify-center items-center ">
           <h1 className="md:text-6xl text-5xl text-gray-500 dark:text-gray-300 text-center mt-5 pb-5">
-            Hi, I'm <span className="font-semibold text-[#7fa7fa] ">Fabián</span>{" "}
+            Hi, I'm <span className="font-semibold text-[#fd004f] ">Fabián</span>{" "}
           </h1>
           <h2 className="md:text-5xl text-4xl font-semibold text-gray-600 dark:text-gray-400  pb-5">
             Front-End Developer
@@ -43,8 +43,8 @@ const Home = () => {
           >
             <Link to="/about">
               <button
-                className={`flex items-center focus:outline-none py-2 px-4 border-solid border-2 border-[#7fa7fa] transition-colors duration-200 ${
-                  isHovered ? "bg-white dark:border-white " : "bg-[#7fa7fa]"
+                className={`flex items-center focus:outline-none py-2 px-4 border-solid border-2 border-[#fd004f] transition-colors duration-200 ${
+                  isHovered ? "bg-white dark:border-white " : "bg-[#fd004f]"
                 }`}
               >
                 <span
