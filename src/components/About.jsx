@@ -19,7 +19,7 @@ const About = () => {
   return (
     <div
       name="/about"
-      className="flex justify-center items-center min-h-screen bg-[#ffffff] dark:bg-[#181a1b] text-[#444440] dark:text-gray-300 transition-colors duration-200"
+      className="flex justify-center items-center min-h-screen bg-[#ffffff] dark:bg-[#181a1b] text-[#444440] dark:text-gray-300 transition-colors duration-200 pt-20 md:pt-10 pb-10"
     >
       <motion.div
         initial={{ opacity: 0, translateX: -3 }}
@@ -28,11 +28,11 @@ const About = () => {
         transition={{ duration: 0.3 }}
         style={{ overflowAnchor: "auto" }}
       >
-        <div className="w-full max-w-[500px] md:max-w-[800px] text-center pt-20 md:pt-0">
+        <div className="w-full max-w-[500px] md:max-w-[800px] text-center ">
           <div className="pb-5">
             <p className="text-4xl font-bold inline">About</p>
           </div>
-          <div className="sm:grid-cols-2 gap-8 pr-8 pl-8 md:pr-32 md:pl-32 mb-5">
+          <div className="sm:grid-cols-2 gap-8 pr-8 pl-8 md:pr-32 md:pl-32 mb-2">
             <p>
               My work consists of creating web apps mainly using React, as well as
               editing and designing multimedia content. With this combined skill
@@ -41,7 +41,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full p-4 pt-8 mb-10 text-center">
+        <div className="w-full p-4 pt-8 mb-4 md:mb-10 text-center">
           <div>
             <p className="text-2xl font-bold mb-8">Main Skills</p>
           </div>
@@ -102,7 +102,7 @@ const About = () => {
 
         <div className="w-full p-4 pt-0 text-center">
           <div>
-            <p className="text-lg font-bold mb-8">Additional Skills</p>
+            <p className="text-lg font-bold mb-5 md:mb-8">Additional Skills</p>
           </div>
 
           <div className="justify-center gap-4 font-bold flex flex-no-wrap max-w-[350px] md:max-w-[500px] mx-auto">
