@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 
 
 const copyEmail = () => {
-  navigator.clipboard.writeText("example@example.com");
+  navigator.clipboard.writeText("musiccofabian@gmail.com");
   toast.success("Email copied", {
     position: toast.POSITION.BOTTOM_CENTER,
     autoClose: 2000,
@@ -23,8 +23,8 @@ const copyEmail = () => {
 };
 
 
-/* bg-[#001a3f]
- */
+
+ 
 
 
 const Contact = () => {
@@ -51,16 +51,16 @@ const Contact = () => {
           {/* SOCIAL ICONS */}
           <div className="flex justify-center pt-8 gap-5 text-[#444440] dark:text-gray-300">
             <a
-              className="transition-all duration-100 ease-in-out transform  hover:text-blue-500"
-              href="https://www.linkedin.com/"
+              className="transition-all duration-100 ease-in-out transform  hover:text-blue-500 hover:dark:text-[#fd204f]"
+              href="https://www.linkedin.com/in/fabi%C3%A1n-musicco-a164231b4/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin size={40} />
             </a>
             <a
-              className="transition-all duration-100 ease-in-out transform hover:text-blue-500"
-              href="https://github.com/"
+              className="transition-all duration-100 ease-in-out transform hover:text-blue-500 hover:dark:text-[#fd204f]"
+              href="https://github.com/vlas-dev"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -68,7 +68,7 @@ const Contact = () => {
             </a>
             <button
               type="button"
-              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-blue-500"
+              className="transition-all duration-100 ease-in-out transform cursor-pointer hover:text-blue-500 hover:dark:text-[#fd204f]"
               onClick={copyEmail}
             >
               <HiOutlineMail size={40} />
@@ -107,7 +107,7 @@ const Contact = () => {
             style={{ outline: "none" }}
             required
           ></textarea>
-          <button className="text-white  bg-blue-500 hover:bg-white border-solid border-2 hover:border-blue-500 border-blue-500 dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
+          <button className="text-white  bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white  border-solid border-2 hover:border-gray-600 border-blue-500  dark:border-[#fd204f] dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
             Send
           </button>
         </form>

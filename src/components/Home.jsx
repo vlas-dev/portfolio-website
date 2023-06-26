@@ -29,13 +29,13 @@ const Home = () => {
     >
         <div className="flex flex-col justify-center items-center ">
           <h1 className="md:text-6xl text-5xl text-gray-500 dark:text-gray-300 text-center mt-5 pb-5">
-            Hi, I'm <span className="font-semibold text-blue-500 ">Fabián</span>{" "}
+            Hi, I'm <span className="font-semibold text-blue-500 dark:text-[#fd204f] ">Fabián</span>{" "}
           </h1>
-          <h2 className="md:text-5xl text-4xl font-semibold text-gray-600 dark:text-gray-400  pb-5">
+          <h2 className="md:text-5xl text-3xl font-semibold text-gray-600 dark:text-gray-400 text-center pb-5">
             Front-End Developer
           </h2>
-          <p className=" text-gray-600 dark:text-gray-400 text-center max-w-[600px] pr-8 pl-8 md:pr-0 md:pl-0">
-          I'm a front-end developer from Argentina specialized in React. Additionally, I have some multimedia editing skills.          </p>
+          <p className="max-w-[500px] md:max-w-[600px] text-gray-600 dark:text-gray-400 text-center px-5 md:pr-0 md:pl-0">
+          I'm a junior dev specialized in React based in Argentina. <br /> I also have skills in graphic design.          </p>
           <div
             className="relative mt-5"
             onMouseEnter={handleHover}
@@ -43,8 +43,8 @@ const Home = () => {
           >
             <Link to="/about">
               <button
-                className={`flex items-center focus:outline-none py-2 px-4 border-solid border-2 border-blue-500 transition-colors duration-200 ${
-                  isHovered ? "bg-white dark:border-white " : "bg-blue-500"
+                className={`flex items-center focus:outline-none py-2 px-4 border-solid border-2   transition-colors duration-200 ${
+                  isHovered ? "bg-white border-gray-600 dark:border-white " : "bg-blue-500 border-blue-500 dark:border-[#fd204f] dark:bg-[#fd204f]"
                 }`}
               >
                 <span

@@ -1,16 +1,19 @@
 import React from "react";
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import Node from "../assets/node.png";
-import Tailwind from "../assets/tailwind.png";
-import Photoshop from "../assets/photoshop.png";
-import Illustrator from "../assets/illustrator.png";
-import Premiere from "../assets/premiere.png";
-import AfterEffects from "../assets/aftereffects.png";
+
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiFigma
+} from "react-icons/si";
 
 import { motion } from "framer-motion";
+
 
 const About = () => {
   return (
@@ -25,13 +28,15 @@ const About = () => {
         transition={{ duration: 0.3 }}
         style={{ overflowAnchor: "auto" }}
       >
-        <div className="w-full max-w-[500px] md:max-w-[800px] text-center pt-20">
+        <div className="w-full max-w-[500px] md:max-w-[800px] text-center pt-20 md:pt-0">
           <div className="pb-5">
             <p className="text-4xl font-bold inline">About</p>
           </div>
           <div className="sm:grid-cols-2 gap-8 pr-8 pl-8 md:pr-32 md:pl-32 mb-5">
             <p>
-            My work consists of creating web apps as well as editing multimedia content. With this combined skill set, I try to bring engaging user experiences to life.
+              My work consists of creating web apps mainly using React, as well as
+              editing and designing multimedia content. With this combined skill
+              set, I try to bring engaging user experiences to life.
             </p>
           </div>
         </div>
@@ -41,91 +46,81 @@ const About = () => {
             <p className="text-2xl font-bold mb-8">Main Skills</p>
           </div>
 
+          <div className="grid grid-cols-3 justify-center gap-4 font-bold md:flex md:flex-no-wrap max-w-[350px] md:max-w-[500px] mx-auto">
+  
+  
+  <div className="flex flex-col ml-4 mr-4">
+    
+  <div className="relative">
+  <div className="w-9 h-12 mt-1 bg-white ml-3 md:ml-0"></div>
+  <div className="absolute top-0 flex flex-col items-center md:left-[-30%]">
+    <SiHtml5 size={60} style={{ color: "#e44d26" }} />
+    <p className="mt-2">HTML</p>
+  </div>
+</div>
+
+  </div>
 
 
-          <div className="grid grid-cols-3 justify-center gap-4 font-bold md:flex md:flex-no-wrap max-w-[350px] md:max-w-[500px] mx-auto">  
+  <div className="flex flex-col ml-4 mr-4">
+    
+  <div className="relative">
+  <div className="w-9 h-12 mt-1 bg-white ml-3 md:ml-0"></div>
+  <div className="absolute top-0 flex flex-col items-center md:left-[-30%]">
+    <SiCss3 size={60} style={{ color: "#264de4" }} />
+    <p className="mt-2">CSS</p>
+  </div>
+</div>
 
-          <div className="w-24 mx-auto">
-              <img className="w-16 mx-auto mb-3" src={HTML} alt="HTML icon" />
-              <p>HTML</p>
-            </div>
-
-            <div className="w-24 mx-auto">
-              <img className="w-16 mx-auto mb-3" src={CSS} alt="CSS icon" />
-              <p>CSS</p>
-            </div>
-
-            <div className="w-24 mx-auto">
-              <img
-                className="w-16 mx-auto mb-3"
-                src={JavaScript}
-                alt="Javascript icon"
-              />
-              <p>JavaScript</p>
-            </div>
-
-            <div className="w-24 mx-auto">
-              <img className="w-16 mx-auto mb-3" src={ReactImg} alt="React icon" />
-              <p>React</p>
-            </div>
-
-            <div className="w-24 mx-auto">
-              <img className="w-16 mx-auto mb-3" src={Node} alt="Node icon" />
-              <p>Node.js</p>
-            </div>
-
-            <div className="w-24 mx-auto">
-              <img
-                className="w-16 mx-auto mb-3"
-                src={Tailwind}
-                alt="Tailwind icon"
-              />
-              <p>Tailwind</p>
-            </div>
-          </div>
+  </div>
 
 
 
 
+  <div className="w-24 flex flex-col items-center">
+  <SiJavascript size={60} style={{ color: "#f7df1e", backgroundColor: "black" }} />
+    <p className="mt-2">JavaScript</p>
+  </div>
 
-          
+  <div className="w-24 flex flex-col items-center">
+    <SiReact size={60} style={{ color: "#149eca" }} />
+    <p className="mt-2">React</p>
+  </div>
+
+  <div className="w-24 flex flex-col items-center">
+    <SiNodedotjs size={60} style={{ color: "#539e43" }} />
+    <p className="mt-2">Node.js</p>
+  </div>
+
+  <div className="w-24 flex flex-col items-center">
+    <SiTailwindcss size={60} style={{ color: "#07b6d5" }} />
+    <p className="mt-2">Tailwind</p>
+  </div>
+</div>
+
         </div>
 
         <div className="w-full p-4 pt-0 text-center">
           <div>
-            <p className="text-2xl font-bold mb-8">Additional Skills</p>
+            <p className="text-lg font-bold mb-8">Additional Skills</p>
           </div>
 
-          <div className="justify-center gap-4 font-bold flex flex-no-wrap max-w-[350px] md:max-w-[500px] mx-auto">  
-
-          <div className="mx-auto">
-              <img className="w-10 md:w-16 mx-auto mb-3" src={Photoshop} alt="Photoshop icon" />
-              <p>Photoshop</p>
+          <div className="justify-center gap-4 font-bold flex flex-no-wrap max-w-[350px] md:max-w-[500px] mx-auto">
+          <div className="w-24 flex flex-col items-center">
+              <SiAdobephotoshop size={30}  />
+              <p className="mt-2">Photoshop</p>
             </div>
 
-            <div className=" mx-auto">
-              <img className="w-10 md:w-16 mx-auto mb-3" src={Illustrator} alt="Illustrator icon" />
-              <p>Illustrator</p>
+            <div className="w-24 flex flex-col items-center">
+              <SiAdobeillustrator size={30} />
+              <p className="mt-2">Illustrator</p>
             </div>
 
-            <div className="mx-auto">
-              <img
-                className="w-10 md:w-16 mx-auto mb-3"
-                src={Premiere}
-                alt="Premiere icon"
-              />
-              <p>Premiere</p>
+            <div className="w-24 flex flex-col items-center">
+            <SiFigma size={30} />
+              <p className="mt-2">Figma</p>
             </div>
-
-            <div className=" mx-auto">
-              <img className="w-10 md:w-16 mx-auto mb-3" src={AfterEffects} alt="After Effects icon" />
-              <p>After Effects</p>
-            </div>
-
-           
           </div>
-
-          
         </div>
       </motion.div>
     </div>

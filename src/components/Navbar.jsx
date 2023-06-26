@@ -3,14 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 import { FaHome, FaUser, FaBriefcase, FaPhone } from "react-icons/fa";
 import { IoIosSunny, IoIosMoon } from "react-icons/io";
 import { Squash as Hamburger } from "hamburger-react";
-import Logo from "../assets/logoF.png";
+import LogoBlue from "../assets/logoBlue.png";
+import LogoRed from "../assets/logoRed.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
-  const [menuIcon, setMenuIcon] = useState("hamburger");
   const location = useLocation();
   const [activeSection, setActiveSection] = useState("");
   const [isClickable, setIsClickable] = useState(true);
@@ -18,7 +18,6 @@ const Navbar = () => {
   const handleClick = (section) => {
     if (isClickable) {
       setNav(false);
-      setMenuIcon("hamburger");
       setActiveSection(section);
       setIsClickable(false);
       setTimeout(() => {
@@ -56,7 +55,11 @@ const Navbar = () => {
       <div className="max-w-[800px] mx-auto flex justify-between items-center">
         <div className="ml-4 mt-2 mb-2 md:ml-2 md:mt-3">
           <Link to="/" onClick={() => handleClick("home")}>
-            <img src={Logo} alt="" style={{ width: "40px" }} />
+            <img
+              src={darkMode ? LogoRed : LogoBlue}
+              alt=""
+              style={{ width: "40px" }}
+            />{" "}
           </Link>
         </div>
         <ul className="hidden md:flex flex-grow justify-center text-gray-600 dark:text-gray-300 text-lg">
@@ -68,7 +71,9 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "home" ? "text-blue-500" : ""
+                  activeSection === "home"
+                    ? "text-blue-500 dark:text-[#fd204f]"
+                    : ""
                 }`}
               >
                 <FaHome className="inline-block pb-1 mr-2" size={20} />
@@ -84,7 +89,9 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "about" ? "text-blue-500" : ""
+                  activeSection === "about"
+                    ? "text-blue-500 dark:text-[#fd204f]"
+                    : ""
                 }`}
               >
                 <FaUser className="inline-block pb-1 mr-2" size={20} />
@@ -100,7 +107,9 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "projects" ? "text-blue-500" : ""
+                  activeSection === "projects"
+                    ? "text-blue-500 dark:text-[#fd204f]"
+                    : ""
                 }`}
               >
                 <FaBriefcase className="inline-block pb-1 mr-2" size={20} />
@@ -116,7 +125,9 @@ const Navbar = () => {
             >
               <span
                 className={`transition-colors duration-200 ${
-                  activeSection === "contact" ? "text-blue-500" : ""
+                  activeSection === "contact"
+                    ? "text-blue-500 dark:text-[#fd204f]"
+                    : ""
                 }`}
               >
                 <FaPhone className="inline-block pb-1 mr-2" size={20} />
@@ -131,11 +142,11 @@ const Navbar = () => {
         >
           {darkMode ? (
             <div className="flex items-center justify-center">
-              <IoIosSunny className="md:h-6 md:w-6 h-8 w-8 text-gray-300 hover:text-blue-500  transition-colors duration-200" />
+              <IoIosSunny className="md:h-6 md:w-6 h-8 w-8 text-gray-300 hover:text-blue-500  hover:dark:text-[#fd204f] transition-colors duration-200" />
             </div>
           ) : (
             <div className="flex items-center justify-center">
-              <IoIosMoon className="md:h-6 md:w-6 h-8 w-8 text-gray-500  hover:text-blue-500 transition-colors duration-200" />
+              <IoIosMoon className="md:h-6 md:w-6 h-8 w-8 text-gray-500  hover:text-blue-500 hover:dark:text-[#fd204f] transition-colors duration-200" />
             </div>
           )}
         </button>
@@ -148,7 +159,7 @@ const Navbar = () => {
             size={30}
             toggled={nav}
             toggle={setNav}
-            onToggle={(toggled) => setMenuIcon(toggled ? "times" : "hamburger")}
+            onToggle={(toggled) => setNav(toggled ? "times" : "hamburger")}
           />
         </div>
       </div>
@@ -159,7 +170,7 @@ const Navbar = () => {
         onClick={() => setNav(false)}
       ></div>
       <ul
-        className={`md:hidden fixed top-0 right-0 h-screen  bg-white dark:bg-[#181a1b] flex flex-col justify-center z-50 gap-8 text-gray-600 dark:text-gray-300 transform  ${
+        className={`md:hidden fixed top-0 right-0 h-screen px-10 bg-white dark:bg-[#181a1b] flex flex-col justify-center z-50  text-gray-600 dark:text-gray-300 transform  ${
           nav ? "translate-x-0" : "translate-x-full"
         } transition duration-300 ease-in-out`}
       >
@@ -171,8 +182,8 @@ const Navbar = () => {
             style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
-              className={`transition-colors duration-200 ${
-                activeSection === "home" ? "text-blue-500" : ""
+              className={`flex items-center transition-colors duration-200 ${
+                activeSection === "home" ? "text-blue-500 dark:text-[#fd204f]" : ""
               }`}
             >
               <FaHome className="inline-block mr-2 pb-1" size={30} />
@@ -188,8 +199,8 @@ const Navbar = () => {
             style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
-              className={`transition-colors duration-200 ${
-                activeSection === "about" ? "text-blue-500" : ""
+              className={`flex items-center transition-colors duration-200 ${
+                activeSection === "about" ? "text-blue-500 dark:text-[#fd204f]" : ""
               }`}
             >
               <FaUser className="inline-block mr-2 pb-1" size={30} />
@@ -205,8 +216,8 @@ const Navbar = () => {
             style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
-              className={`transition-colors duration-200 ${
-                activeSection === "projects" ? "text-blue-500" : ""
+              className={`flex items-center transition-colors duration-200  ${
+                activeSection === "projects" ? "text-blue-500 dark:text-[#fd204f]" : ""
               }`}
             >
               <FaBriefcase className="inline-block mr-2 pb-1" size={30} />
@@ -222,8 +233,8 @@ const Navbar = () => {
             style={{ pointerEvents: isClickable ? "auto" : "none" }}
           >
             <span
-              className={`transition-colors duration-200 ${
-                activeSection === "contact" ? "text-blue-500" : ""
+              className={`flex items-center transition-colors duration-200 ${
+                activeSection === "contact" ? "text-blue-500 dark:text-[#fd204f]" : ""
               }`}
             >
               <FaPhone className="inline-block mr-2 pb-1" size={30} />
