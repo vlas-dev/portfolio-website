@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div
       name="/projects"
-      className="flex justify-center items-center  pb-20 w-full bg-[#ffffff] dark:bg-[#181a1b] pt-20 md:pt-36 sm:pl-4 sm:pr-4  text-center md:h-screen  transition-colors duration-200"
+      className="flex justify-center items-center  pb-20 w-full bg-[#ffffff] dark:bg-[#181a1b] dark:text-gray-300 text-[#444440] pt-20 md:pt-36 sm:pl-4 sm:pr-4  text-center md:h-screen  transition-colors duration-200"
     >
       <motion.div
         className="w-full max-w-[800px] mx-auto"
@@ -20,7 +20,7 @@ const Projects = () => {
         style={{ overflowAnchor: "auto" }}
       >
         <div className="pb-5">
-          <p className="text-4xl font-bold inline  text-[#444440] dark:text-gray-300">
+          <p className="text-4xl font-bold inline">
             Projects
           </p>
         </div>
