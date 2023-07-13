@@ -1,7 +1,7 @@
 import React from "react";
 import calculatorImg from "../assets/calculatorImg.jpeg";
 import weatherImg from "../assets/weatherImg.jpeg";
-import memoryImg from "../assets/memoryImg.jpeg";
+import rpsImg from "../assets/rpsImg.jpeg";
 
 import { motion } from "framer-motion";
 
@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div
       name="/projects"
-      className="flex justify-center items-center  pb-20 w-full bg-[#ffffff] dark:bg-[#181a1b]  pt-20 sm:pl-4 sm:pr-4  text-center md:h-screen  transition-colors duration-200"
+      className="flex justify-center items-center  pb-20 w-full bg-[#ffffff] dark:bg-[#181a1b] pt-20 md:pt-36 sm:pl-4 sm:pr-4  text-center md:h-screen  transition-colors duration-200"
     >
       <motion.div
         className="w-full max-w-[800px] mx-auto"
@@ -19,11 +19,17 @@ const Projects = () => {
         transition={{ duration: 0.3 }}
         style={{ overflowAnchor: "auto" }}
       >
-        <div>
+        <div className="pb-5">
           <p className="text-4xl font-bold inline  text-[#444440] dark:text-gray-300">
             Projects
           </p>
         </div>
+
+        <div className="sm:grid-cols-2 gap-8 pr-8 pl-8 md:pr-32 md:pl-32 mb-2">
+            <p>
+              These are some of my latest projects.
+            </p>
+          </div>
 
         {/* CONTAINER */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-10 pr-8 pl-8 md:pr-0 md:pl-0">
@@ -36,7 +42,7 @@ const Projects = () => {
                 Calculator
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                A simple calculator built using React and JavaScript. It can perform basic
+                Simple calculator integrated into a phone interface using CSS. It can perform basic
                 mathematical operations.
               </p>
             </div>
@@ -69,7 +75,7 @@ const Projects = () => {
                 Weather App
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                  Displays the weather using the OpenWeatherMap API. Supports location-based retrieval.
+                  Displays the weather using the OpenWeatherMap API. It uses dynamic AI images for different weather conditions.
               </p>
             </div>
             <div className="text-center pt-4 pb-4 mb-4">
@@ -82,7 +88,7 @@ const Projects = () => {
                 Live
               </a>
               <a
-                href="https://google.com"
+                href="https://github.com/vlas-dev/weather-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
@@ -94,18 +100,18 @@ const Projects = () => {
 
           {/* GRID ITEM */}
           <div className="shadow-md shadow-[#040c16] container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col">
-            <img src={memoryImg} alt="Memory Game" className="w-full h-full " />
+            <img src={rpsImg} alt="RPS" className="w-full h-full " />
             <div className="p-3 flex-grow">
               <h2 className="text-2xl font-bold text-[#444440] dark:text-gray-300">
-                Memory Game
+                RPS
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                Test your memory skills by remembering the positions and aim for the highest score possible.
+              Classic Rock Paper Scissors game reimaginated as a retro fighting videogame with custom assets.
               </p>
             </div>
             <div className="text-center pt-4 pb-4 mb-4">
               <a
-                href="https://google.com"
+                href="https://vlas-dev.github.io/RPS-app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
@@ -113,7 +119,7 @@ const Projects = () => {
                 Live
               </a>
               <a
-                href="https://google.com"
+                href="https://github.com/vlas-dev/RPS-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
