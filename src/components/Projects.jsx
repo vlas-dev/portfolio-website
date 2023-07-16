@@ -34,7 +34,7 @@ const Projects = () => {
         {/* CONTAINER */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-10 pr-8 pl-8 md:pr-0 md:pl-0">
           {/* GRID ITEM */}
-          <div className="shadow-md shadow-[#040c16] container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col text-center">
+          <div className="shadow-md shadow-[#040c16] dark:border container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col text-center">
             <img src={calculatorImg} alt="Calculator" className="w-full h-full " />
             
             <div className="p-3 flex-grow">
@@ -68,14 +68,14 @@ const Projects = () => {
           </div>
 
           {/* GRID ITEM */}
-          <div className="shadow-md shadow-[#040c16] container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col  text-center">
+          <div className="shadow-md shadow-[#040c16] dark:border container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col  text-center">
             <img src={weatherImg} alt="Weather App" className="w-full h-full" />
             <div className="p-3 flex-grow">
               <h2 className="text-2xl font-bold text-[#444440] dark:text-gray-300">
                 Weather App
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-              Quick tool designed to check the weather of any city with the OpenWeatherMap API. It uses dynamic AI images.
+              Quick tool to check the weather of any city with the OpenWeatherMap API. It uses dynamic AI images.
               </p>
             </div>
             <div className="pt-4 pb-4 mb-4">
@@ -99,7 +99,7 @@ const Projects = () => {
           </div>
 
           {/* GRID ITEM */}
-          <div className="shadow-md shadow-[#040c16] container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col text-center ">
+          <div className="shadow-md shadow-[#040c16] dark:border container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col text-center ">
             <img src={rpsImg} alt="RPS" className="w-full h-full " />
             <div className="p-3 flex-grow">
               <h2 className="text-2xl font-bold text-[#444440] dark:text-gray-300">
