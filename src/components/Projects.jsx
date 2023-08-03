@@ -75,7 +75,7 @@ const Projects = () => {
                 Weather App
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-              Quick tool to check the weather of any city with the OpenWeatherMap API. It uses dynamic AI images.
+              Quick tool to check the weather of any city with the OpenWeatherMap API. It uses dynamic images.
               </p>
             </div>
             <div className="pt-4 pb-4 mb-4">
