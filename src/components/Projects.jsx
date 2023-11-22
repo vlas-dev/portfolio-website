@@ -2,131 +2,103 @@ import React from "react";
 import calculatorImg from "../assets/calculatorImg.jpeg";
 import weatherImg from "../assets/weatherImg.jpeg";
 import rpsImg from "../assets/rpsImg.jpeg";
-
+import synergyImg from "../assets/synergyImg.jpeg";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  const projectData = [
+    {
+      title: "Calculator",
+      description:
+        "Simple calculator integrated into a phone interface using CSS.",
+      image: calculatorImg,
+      liveLink: "https://vlas-dev.github.io/calculator-app",
+      codeLink: "https://github.com/vlas-dev/calculator-app",
+    },
+    {
+      title: "Weather App",
+      description:
+        "Quick tool to check the weather of any city using the OpenWeatherMap API.",
+      image: weatherImg,
+      liveLink: "https://vlas-dev.github.io/weather-app",
+      codeLink: "https://github.com/vlas-dev/RPS-app",
+    },
+    {
+      title: "R.P.S.",
+      description:
+        "Classic Rock Paper Scissors game reimagined as a retro fighting game.",
+      image: rpsImg,
+      liveLink: "https://vlas-dev.github.io/RPS-app",
+      codeLink: "#",
+    },
+    {
+      title: "Synergy",
+      description: "Business platform for collaborative efforts.",
+      image: synergyImg,
+      liveLink: "#",
+      codeLink: "#",
+    },
+  ];
+
   return (
     <div
       name="/projects"
-      className="flex justify-center items-center  pb-20 w-full bg-[#ffffff] dark:bg-[#181a1b] dark:text-gray-300 text-[#444440] pt-20 md:pt-36 sm:pl-4 sm:pr-4  md:h-screen  transition-colors duration-200"
+      className="flex justify-center items-center pb-20 w-full  dark:bg-[#1a1a1a] dark:text-gray-300 text-gray-700 pt-20 md:pt-36 sm:pl-4 sm:pr-4 md:h-screen transition-colors duration-200"
     >
       <motion.div
-        className="w-full max-w-[800px] mx-auto"
+        className=" max-w-[500px] md:max-w-[800px]  mx-auto p-4"
         initial={{ opacity: 0, translateX: -3 }}
         animate={{ opacity: 1, translateX: 0 }}
         exit={{ opacity: 0, translateX: 3 }}
         transition={{ duration: 0.3 }}
-        style={{ overflowAnchor: "auto" }}
       >
-        <div className="pb-5 text-center">
-          <p className="text-4xl font-bold inline">
-            Projects
-          </p>
+        <div className="pb-5 text-center ">
+          <p className="text-4xl font-bold">Projects</p>
         </div>
 
-        <div className="sm:grid-cols-2 gap-8 pr-8 pl-8 md:pr-32 md:pl-32 mb-2 text-center">
-            <p>
-              These are some of my latest projects.
-            </p>
-          </div>
+        <p className="text-center text-lg mb-4">
+          These are some of my latest projects.
+        </p>
 
-        {/* CONTAINER */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-10 pr-8 pl-8 md:pr-0 md:pl-0">
-          {/* GRID ITEM */}
-          <div className="shadow-md shadow-[#040c16] dark:border container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col text-center">
-            <img src={calculatorImg} alt="Calculator" className="w-full h-full " />
-            
-            <div className="p-3 flex-grow">
-              <h2 className="text-2xl font-bold text-[#444440] dark:text-gray-300">
-                Calculator
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
-                Simple calculator integrated into a phone interface using CSS. It can perform basic
-                mathematical operations.
-              </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+          {projectData.map((project, index) => (
+            <div
+              key={index}
+              className="group overflow-hidden shadow-md rounded-lg relative transition-all duration-300 hover:shadow-xl"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="max-h-60 w-full object-cover transform md:group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-70 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex justify-center items-center">
+                <div className="text-center px-4">
+                  <p className="text-white text-3xl font-semibold mb-4 shadow-md">
+                    {project.title}
+                  </p>
+                  <p className="text-white text-md mb-10 shadow-md">
+                    {project.description}
+                  </p>
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-500 hover:bg-blue-600 dark:bg-[#fd204f] dark:hover:bg-[#da003f] text-white px-5 py-3 mr-2 rounded transition-colors duration-300 "
+                  >
+                    Live
+                  </a>
+                  <a
+                    href={project.codeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded transition-colors duration-300 "
+                  >
+                    Code
+                  </a>
+                </div>
+              </div>
             </div>
- 
-            <div className=" pt-4 pb-4 mb-4">
-              <a
-                href="https://vlas-dev.github.io/calculator-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
-              >
-                Live
-              </a>
-              <a
-                href="https://github.com/vlas-dev/calculator-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
-              >
-                Code
-              </a>
-            </div>
-          </div>
-
-          {/* GRID ITEM */}
-          <div className="shadow-md shadow-[#040c16] dark:border container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col  text-center">
-            <img src={weatherImg} alt="Weather App" className="w-full h-full" />
-            <div className="p-3 flex-grow">
-              <h2 className="text-2xl font-bold text-[#444440] dark:text-gray-300">
-                Weather App
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
-              Quick tool to check the weather of any city with the OpenWeatherMap API. It uses dynamic images.
-              </p>
-            </div>
-            <div className="pt-4 pb-4 mb-4">
-              <a
-                href="https://vlas-dev.github.io/weather-app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
-              >
-                Live
-              </a>
-              <a
-                href="https://github.com/vlas-dev/weather-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
-              >
-                Code
-              </a>
-            </div>
-          </div>
-
-          {/* GRID ITEM */}
-          <div className="shadow-md shadow-[#040c16] dark:border container rounded-md mx-auto transform ease-in-out overflow-hidden flex flex-col text-center ">
-            <img src={rpsImg} alt="RPS" className="w-full h-full " />
-            <div className="p-3 flex-grow">
-              <h2 className="text-2xl font-bold text-[#444440] dark:text-gray-300">
-                RPS
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 mt-2">
-              Classic Rock Paper Scissors game reimagined as a retro fighting game with custom assets and sprites.              </p>
-            </div>
-            <div className="pt-4 pb-4 mb-4">
-              <a
-                href="https://vlas-dev.github.io/RPS-app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
-              >
-                Live
-              </a>
-              <a
-                href="https://github.com/vlas-dev/RPS-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 m-2  text-white border-2 border-blue-500 hover:border-gray-600 dark:border-[#fd204f] hover:dark:border-white bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white hover:text-gray-600 font-bold text-lg transition-colors duration-200"
-              >
-                Code
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </motion.div>
     </div>
