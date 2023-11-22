@@ -29,14 +29,14 @@ const Projects = () => {
         "Classic Rock Paper Scissors game reimagined as a retro fighting game.",
       image: rpsImg,
       liveLink: "https://vlas-dev.github.io/RPS-app",
-      codeLink: "#",
+      codeLink: "https://github.com/vlas-dev/RPS-app",
     },
     {
       title: "Synergy",
       description: "Business platform for collaborative efforts.",
       image: synergyImg,
-      liveLink: "#",
-      codeLink: "#",
+      liveLink: "https://synergy-solutions.vercel.app",
+      codeLink: "https://github.com/vlas-dev/nextjs-site-UPDATE",
     },
   ];
 
