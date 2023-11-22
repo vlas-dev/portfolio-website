@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div
       name="/contact"
-      className="flex justify-center items-center pt-20 md:pt-0 md:h-screen w-full bg-gray-200 text-[#444440] dark:text-gray-300 dark:bg-[#181a1b] sm:pl-4 sm:pr-4 text-center  transition-colors duration-200"
+      className="flex justify-center items-center pt-20 md:pt-0 md:h-screen w-full bg-gray-100 text-[#444440] dark:text-gray-300 dark:bg-[#181a1b] sm:pl-4 sm:pr-4 text-center  transition-colors duration-200"
     
 
     >
@@ -107,7 +107,7 @@ const Contact = () => {
             style={{ outline: "none" }}
             required
           ></textarea>
-          <button className="text-white  bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white  border-solid border-2 hover:border-gray-600 border-blue-500  dark:border-[#fd204f] dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center rounded transition-colors duration-200">
+          <button className="text-white  bg-blue-500 dark:bg-[#fd204f] hover:bg-blue-600 hover:dark:bg-[#da003f]  hover:border-gray-600   px-5 py-3  my-5 mx-auto flex items-center rounded transition-colors duration-200">
             Send
           </button>
         </form>

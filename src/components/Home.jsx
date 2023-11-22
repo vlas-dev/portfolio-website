@@ -12,7 +12,7 @@ const Home = () => {
   };
 
   return (
-    <div name="/" className="w-full h-screen bg-gray-200 dark:bg-[#181a1b]  transition-colors duration-200"
+    <div name="/" className="w-full h-screen bg-gray-100 dark:bg-[#181a1b]  transition-colors duration-200"
     
 
 
