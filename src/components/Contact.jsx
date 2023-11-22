@@ -84,7 +84,7 @@ const Contact = () => {
           style={{ maxWidth: "600px" }}
         >
           <input
-            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] hover:text-[#0e1621] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] "
+            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] hover:text-[#0e1621] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] rounded"
             type="text"
             placeholder="Name"
             name="name"
@@ -92,7 +92,7 @@ const Contact = () => {
             required
           />
           <input
-            className="my-4 p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] "
+            className="my-4 p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] rounded"
             type="text"
             placeholder="Email"
             name="email"
@@ -100,14 +100,14 @@ const Contact = () => {
             required
           />
           <textarea
-            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] "
+            className="p-2 bg-[#ededed] text-[#303030] placeholder-[#777777] w-full border-solid border-2 border-[#adadad] dark:border-[#ededed] rounded"
             name="message"
             rows="7"
             placeholder="Message"
             style={{ outline: "none" }}
             required
           ></textarea>
-          <button className="text-white  bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white  border-solid border-2 hover:border-gray-600 border-blue-500  dark:border-[#fd204f] dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center  transition-colors duration-200">
+          <button className="text-white  bg-blue-500 dark:bg-[#fd204f] hover:bg-white hover:dark:bg-white  border-solid border-2 hover:border-gray-600 border-blue-500  dark:border-[#fd204f] dark:hover:border-white  hover:text-gray-600 px-4 py-3 my-5 mx-auto flex items-center rounded transition-colors duration-200">
             Send
           </button>
         </form>
