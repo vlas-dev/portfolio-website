@@ -12,7 +12,7 @@ const Home = () => {
   };
 
   return (
-    <div name="/" className="w-full h-screen bg-white dark:bg-[#181a1b]  transition-colors duration-200"
+    <div name="/" className="w-full h-screen bg-gray-200 dark:bg-[#181a1b]  transition-colors duration-200"
     
 
 
@@ -43,14 +43,12 @@ const Home = () => {
           >
             <Link to="/about">
               <button
-                className={`flex items-center focus:outline-none py-2 px-4 border-solid border-2  rounded transition-colors duration-200 ${
-                  isHovered ? "bg-white border-gray-600 dark:border-white " : "bg-blue-500 border-blue-500 dark:border-[#fd204f] dark:bg-[#fd204f]"
+                className={`flex items-center focus:outline-none px-5 py-3  rounded transition-colors duration-200 ${
+                  isHovered ? "bg-blue-600   dark:bg-[#da003f]"  : " bg-blue-500  dark:bg-[#fd204f] "
                 }`}
               >
                 <span
-                  className={`mr-2 ${
-                    isHovered ? "text-gray-600 " : "text-white "
-                  }`}
+                  className="mr-2 text-white"
                 >
                   Read More
                 </span>
@@ -60,11 +58,7 @@ const Home = () => {
                   transition={{ yoyo: Infinity, duration: 0.5 }}
                 >
                   <FiArrowRight
-                    className={
-                      isHovered
-                        ? "text-gray-600"
-                        : "text-white"
-                    }
+                    className="text-white"
                     style={{ marginTop: "3px" }}
                   />
                 </motion.span>
