@@ -35,7 +35,7 @@ const Home = () => {
             Front-End Developer
           </h2>
           <p className="max-w-[350px] md:max-w-[600px] text-gray-600 dark:text-gray-400 text-center px-5 md:pr-0 md:pl-0">
-          I'm a junior dev specialized in React based in Argentina. <br /> I also have skills in graphic design.          </p>
+          I'm a Web Developer specialized in React based in Argentina. <br /> I also have skills in graphic design.          </p>
           <div
             className="relative mt-5"
             onMouseEnter={handleHover}
